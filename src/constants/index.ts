@@ -1,0 +1,4 @@
+export const CATEGORY_UI_RELEATED = 1
+export const CATEGORY_CODE_RELEATED = 2
+export const CATEGORY_DESIGN_RELEATED = 3
+export const CATEGORY_ICON_RELEATED = 4
