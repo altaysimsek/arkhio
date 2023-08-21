@@ -4,6 +4,7 @@
     "url": "localhost",
     "title": "HTMLww",
     "categoryId": 1,
+    "categoryName":"UI",
     "description": "HTML is the standard markup language for creating Web pages.",
     "releaseDate": "1993-01-01"
   },
@@ -12,6 +13,7 @@
     "url": "localhost",
     "title": "HTMLaa",
     "categoryId": 2,
+    "categoryName":"UI",
     "description": "HTML is the standard markup language for creating Web pages.",
     "releaseDate": "1993-01-01"
   },
@@ -20,6 +22,7 @@
     "url": "localhost",
     "title": "HTMLcc",
     "categoryId": 3,
+    "categoryName":"UI",
     "description": "HTML is the standard markup language for creating Web pages.",
     "releaseDate": "1993-01-01"
   },
@@ -28,6 +31,7 @@
     "url": "localhost",
     "title": "HTMLdd",
     "categoryId": 4,
+    "categoryName":"UI",
     "description": "HTML is the standard markup language for creating Web pages.",
     "releaseDate": "1993-01-01"
   }
