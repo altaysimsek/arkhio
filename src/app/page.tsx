@@ -1,7 +1,6 @@
 
 import { readJsonFile } from "@/utils/reader"
 import { Search } from "@/components/Search"
-import ItemCard from "./components/ItemCard"
 
 
 export default async function Home() {

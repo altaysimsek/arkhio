@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import { linkItem } from "@/types";
-import ItemCard from "../../app/components/ItemCard";
-import "../../app/styles/Cards.css"
+import ItemCard from "@/components/ItemCard"
+import "@/styles/Cards.scss"
+import { categoryMapper } from "@/utils/mapper";
 
 //TODO: improve search props type
 interface SearchProps {
@@ -40,21 +41,21 @@ export const Search = ({ data }: SearchProps) => {
         onChange={(e: any) => setQuery(e.target.value)}
       />
       <select onChange={(e: any) => setCategory(e.target.value)}>
-        {/* TODO: render categories dynamically from constants */}
-        <option value="">All</option>
-        <option value="1">UI</option>
-        <option value="2">Design</option>
-        <option value="3">Code</option>
+        <option>All</option>
+        {
+          data.map(({categoryId}: linkItem) => (
+            <option key={categoryId} value={categoryId}>{categoryMapper(categoryId)}</option>
+          ))
+        }
       </select>
       <ul>
-        {/* TODO: create Item component */}
         {getFilteredData(data, query, category)?.map((item: linkItem) => (
           <ItemCard
             className="item-card"
             key={item.id}
             name={item.title}
             desc={item.description}
-            tag1={item.categoryName}
+            tag={item.categoryId}
             date={item.releaseDate}
           ></ItemCard>
         ))}
