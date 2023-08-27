@@ -1,5 +1,28 @@
 .header-container ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 20px 36px;
+    
 }
+.header-container *{
+    transition: 0.3s all ease;
+}
+
+.header-left{
+    font-size: 24px;
+    
+}
+
+.header-left:hover{
+    transform: scale(1.1);
+}
+.header-links a{
+    margin: 0 12px;
+   
+}
+
+.header-links a:hover{
+    font-weight: bold;
+}
+
